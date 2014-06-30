@@ -1,0 +1,33 @@
+Name        : qtcurve-qt5
+Version     : 1.8.15
+Release     : 1
+Group       : System/GUI/Other
+License     : GPLv2
+Summary     : Qt 5 style
+Description : |
+  Qt 5 style.
+URL         : https://github.com/QtCurve/qtcurve-qt5
+Sources     :
+    - "%{name}-%{version}.tar.xz"
+SetupOptions: -q -n %{name}-%{version}/upstream
+
+PkgBR:
+    - cmake
+PkgConfigBR:
+    - Qt5Core
+    - Qt5Gui
+    - Qt5Widgets
+    - Qt5Svg
+    - Qt5DBus
+    - Qt5X11Extras
+    - xcb
+Requires:
+    - libxcb >= 1.10
+    - qt5-plugin-platform-xcb
+
+Configure: cmake
+ConfigOptions:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo 
+
+Files:
+    - "%doc AUTHORS COPYING README TODO"
