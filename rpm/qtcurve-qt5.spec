@@ -25,6 +25,7 @@ BuildRequires:  pkgconfig(Qt5Svg)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(Qt5X11Extras)
 BuildRequires:  pkgconfig(xcb)
+BuildRequires:  pkgconfig(xcb-image)
 BuildRequires:  cmake
 
 %description

@@ -21,6 +21,7 @@ PkgConfigBR:
     - Qt5DBus
     - Qt5X11Extras
     - xcb
+    - xcb-image
 Requires:
     - libxcb >= 1.10
     - qt5-plugin-platform-xcb
