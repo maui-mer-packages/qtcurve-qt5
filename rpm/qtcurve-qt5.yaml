@@ -32,3 +32,4 @@ ConfigOptions:
 
 Files:
     - "%doc AUTHORS COPYING README TODO"
+    - "%{_qt5_plugindir}/styles/qtcurve.so"

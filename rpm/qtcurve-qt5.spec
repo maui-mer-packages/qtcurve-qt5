@@ -62,5 +62,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %doc AUTHORS COPYING README TODO
+%{_qt5_plugindir}/styles/qtcurve.so
 # >> files
 # << files
